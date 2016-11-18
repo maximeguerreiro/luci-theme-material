@@ -55,10 +55,10 @@
      */
     function getCurrentNodeByUrl() {
         var ret = false;
-        /*if (!$('body').hasClass('logged-in')) {
+        if ($('input[name="luci_password"]').length == 1) {
             luciLocation = ["Main", "Login"];
             return true;
-        }*/
+        }
 
         $(".main > .main-left > .nav > .slide > .menu").each(function () {
             var ulNode = $(this);
